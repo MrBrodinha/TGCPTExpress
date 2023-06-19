@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  background-image: url('../../Imagens/wallpaper.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.centro {
+  margin: 0 20% 1% 20%;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#imagem1, #imagem2 {
+    display: flex;
+    margin: 10px auto;
+}
+
+#imagem1 {
+    width: 20%;
+}
+
+#imagem2 {
+    width: 30%;
+}
+
+#conteudo {
+  font-family: Helvetica;
+  list-style: none;
+  background-color: #141517;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  color: #FAFAFA;
+  border-bottom: 3px solid #FFC603;
+}
+
+#conteudo b {
+  color: #FFC603;
+}
+
+#conteudo input {
+  width: 100%;
+  background: #444444;
+  height: 25px;
+  border-style: none;
+  border-bottom: 1px solid #FFC603;
+  margin-top: 5px;
+  color: #FAFAFA;
+  font-family: Helvetica;
+}
+
+#conteudo input[type="file"] {
+  border-bottom: none;
+  background: transparent;
+}
+
+#botoes {
+  display: flex;
+  justify-content: center;
+}
+
+#botoes a, #botoes input {
+  background-color: #141517;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-family: Helvetica;
+  text-decoration: none;
+  color: #FAFAFA;
+  margin: 1% 5% 1% 5%;
+}
+
+#botoes a:hover, #botoes input:hover {
+  padding-top: 12px;
+  border-top: 3px solid #FFC603;
+  background: linear-gradient(to bottom, #141517, #444444, #141517);
+  cursor: pointer;
+}
+
+#botoes input {
+  font-size: 16px;
+  margin-left: 5%;
+  background-color: #141517;
+  color: #FAFAFA;
+  border-style: none;
+}
+
+
+

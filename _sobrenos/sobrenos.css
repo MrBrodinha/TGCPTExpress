@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  background-image: url('../Imagens/wallpaper.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#perfil {
+  top: 0;
+  right: 0;
+  position: absolute;
+  margin: 1%;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#login img {
+  width: 100%;
+  height: 100%;
+}
+
+#navegacao {
+  text-align: center;
+  list-style: none;
+}
+
+.item a, .selected {
+  background-color: #141517;
+  padding: 15px;
+  margin: 3% 5%;   
+  font-family: Helvetica;
+  border-radius: 5px;
+  color: #FAFAFA;
+  text-decoration: none;
+  display: inline-block;
+  width: 18%;
+}
+
+.item a:hover {
+  text-decoration: none;
+  color: #FAFAFA;
+  border-bottom: 3px solid #FFC603;
+  background: linear-gradient(to bottom, #141517, #444444, #141517);
+  cursor: pointer;
+}
+
+.selected {
+  color: #FAFAFA;
+  border: none;
+  border-bottom: 3px solid #FFC603 ;
+  cursor: default;
+  background: linear-gradient(to bottom, #141517, #444444, #141517);
+}
+.centro {
+  margin: 0% auto 1% auto;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#imagem1, #imagem2 {
+    display: flex;
+    margin: 10px auto;
+}
+
+#imagem1 {
+    width: 20%;
+}
+
+#imagem2 {
+    width: 30%;
+}
+
+#conteudo {
+  font-family: Helvetica;
+  list-style: none;
+  background-color: #141517;
+  border-radius: 5px;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  border-top: 3px solid #FFC603;
+  color: #FAFAFA;
+}
+
+#acompanhar {
+  font-size: 12px;
+  margin-top: 25px;
+  font-style: italic;
+}
+
+
+#autor {
+  font-size: 12px;
+  margin-top: 25px;
+  font-style: italic;
+}
+
+#twitch-embed {
+    display: flex;
+    justify-content: center;
+}
+
+#membros {
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse; 
+}
+
+#membros tr td {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+}
+
+#membros tr {
+  border-bottom: 1px solid black;
+}

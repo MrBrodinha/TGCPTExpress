@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  background-image: url('../Imagens/wallpaper.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#perfil {
+  top: 0;
+  right: 0;
+  position: absolute;
+  margin: 1%;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#login img {
+  width: 100%;
+  height: 100%;
+}
+
+#navegacao {
+  text-align: center;
+  list-style: none;
+}
+
+.item a, .selected {
+  background-color: #141517;
+  padding: 15px;
+  margin: 3% 5%;   
+  font-family: Helvetica;
+  border-radius: 5px;
+  color: #FAFAFA;
+  text-decoration: none;
+  display: inline-block;
+  width: 18%;
+}
+
+.item a:hover {
+  text-decoration: none;
+  color: #FAFAFA;
+  border-bottom: 3px solid #FFC603;
+  background: linear-gradient(to bottom, #141517, #444444, #141517);
+  cursor: pointer;
+}
+
+.selected {
+  color: #FAFAFA;
+  border: none;
+  border-bottom: 3px solid #FFC603 ;
+  cursor: default;
+  background: linear-gradient(to bottom, #141517, #444444, #141517);
+}
+
+.centro {
+  margin: 0% auto 1% auto;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#imagem1, #imagem2 {
+    display: flex;
+    margin: 10px auto;
+}
+
+#imagem1 {
+    width: 20%;
+}
+
+#imagem2 {
+    width: 30%;
+}
+
+#publicar{
+  background-color: #141517;
+  padding: 18px;
+  font-family: Helvetica;
+  border-radius: 5px;
+  color: #FAFAFA;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  width: 18%;
+  margin-bottom: 3%;
+}
+
+#publicar:hover {
+  text-decoration: none;
+  color: #FAFAFA;
+  border-bottom: 3px solid #FFC603;
+  border-top: 3px solid #FFC603;
+  background: linear-gradient(to bottom, #141517, #444444, #141517);
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#conteudo {
+  font-family: Helvetica;
+  list-style: none;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#publicacao {
+  background: none;
+  border: none;
+  width: 80%;
+      font-family: Helvetica;
+}
+/*when i open up publicacao which is a dialog, the things behind are supposed to be locked by a black screen*/
+#publicacao::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+    font-family: Helvetica;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #FFC603;
+    background-color: #141517;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 3px solid #FFC603;
+    border-bottom: 3px solid #FFC603;
+}
+
+.popup input {
+    height: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    color: #FAFAFA;
+    border: none;
+    border-bottom: 0.1px solid #FFC603;
+    height: 25px;
+    background: #444444;
+    width: 100%;
+}
+
+.popup textarea {
+    height: 100px;
+    margin-bottom: 20px;
+    background: transparent;
+    color: #FAFAFA;
+    border: none;
+    border-bottom: 0.1px solid #FFC603;
+    background: #444444;
+    width: 100%;
+}
+
+.popup input[type="file"] {
+    font-family: Helvetica;
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: none;
+    background: transparent;
+}
+
+
+.botao {
+  font-family: Helvetica;
+  font-weight: bold;
+  align-items: center;
+  margin: 1% 0 0 20%;
+  width: 20%;
+  height: 50px;
+  background-color: #141517;
+  border-radius: 10px;
+  border-style: none;
+  color:#FAFAFA;
+}
+
+.botao:hover {
+  height: 47px;
+  border-top: 3px solid #FFC603;
+  background: linear-gradient(to bottom right, #141517, #2c2b2b, #141517);
+  cursor: pointer;
+}
+
+.publicacao {
+  border-top: 3px solid #FFC603;
+  background: linear-gradient(to bottom right, #141517, #2c2b2b, #141517);
+  padding: 20px;
+  border-radius: 20px;
+  font-family: Helvetica;
+  color: #FAFAFA;
+  border-bottom: 3px solid #FFC603;
+  margin-bottom: 5%;
+}
+.publicacao img {
+  width: 100%;
+  border: 1px solid black;
+  margin: 10px 0 20px 0;
+}
+
+.publicacao span {
+  color: rgb(151, 151, 151);
+  margin-bottom: 1000px;
+}
+
+#eliminar {
+    border-radius: 10px;
+    font-family: Helvetica;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: darkred; 
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+#eliminar:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#verpost {
+    border-radius: 10px;
+    font-family: Helvetica;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #141517; 
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+#verpost:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.toggle-button {
+  font-size: 24px;
+  color: gray;
+  background: transparent;
+  border: none;
+  margin-left: 25%;
+  cursor: pointer;
+}
+
+#dislike {
+  margin-left: 19%;
+}
+
+.toggle-button.select {
+  color: white;
+}
+
+#totalGosto {
+  margin-left: 19%;
+}
+
+.publicacao form input[type="text"] {
+  width: 86%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background: #444444;
+  color: #FAFAFA;
+  padding-left: 10px;
+  margin-top: 1%;
+}
+
+.publicacao form input[type="submit"] {
+  width: 10%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background: #444444;
+  color: #FAFAFA;
+  font-weight: bold;
+  margin-left: 1%;
+}
+
+.publicacao form input[type="submit"]:hover {
+  background: #141517;
+  cursor: pointer;
+}
+
+
